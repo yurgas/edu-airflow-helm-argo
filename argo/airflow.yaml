@@ -4,6 +4,7 @@ metadata:
   name: airflow-official
   namespace: argocd
 spec:
+  project: default
   destination:
     server: https://kubernetes.default.svc
     namespace: airflow-official
