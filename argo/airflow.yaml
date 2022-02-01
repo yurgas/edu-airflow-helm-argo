@@ -12,7 +12,7 @@ spec:
     helm:
       releaseName: airflow
       values: |
-        logs.persistence.enabled: false
+        workers.persistence.enabled: false
         createUserJob.useHelmHooks: false
         migrateDatabaseJob.useHelmHooks: false
     chart: airflow
