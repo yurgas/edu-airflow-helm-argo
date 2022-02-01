@@ -23,7 +23,7 @@ spec:
             enabled: false
         dags:
           gitSync:
-            enabled: false
+            enabled: true
             repo: https://github.com/yurgas/edu-airflow-dags.git
             branch: master
             subPath: dags
