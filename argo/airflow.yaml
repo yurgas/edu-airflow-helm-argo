@@ -18,6 +18,9 @@ spec:
       - name: migrateDatabaseJob.useHelmHooks
         value: "false"
       values: |
+        env:
+        - name: PYTHONPATH
+          value: "/opt/airflow/dags/repo"
         workers:
           persistence:
             enabled: true
