@@ -12,6 +12,7 @@ spec:
     helm:
       releaseName: airflow
       parameters:
+      # HelmHooks parameters for ArgoCD https://airflow.apache.org/docs/helm-chart/stable/index.html#installing-the-chart-with-argocd
       - name: createUserJob.useHelmHooks
         value: "false"
       - name: migrateDatabaseJob.useHelmHooks
@@ -20,6 +21,12 @@ spec:
         workers:
           persistence:
             enabled: false
+        dags:
+          gitSync:
+            enabled: false
+            repo: https://github.com/yurgas/edu-airflow-dags.git
+            branch: master
+            subPath: dags
     chart: airflow
     repoURL: https://airflow.apache.org
     targetRevision: 1.4.0
