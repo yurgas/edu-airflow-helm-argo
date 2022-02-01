@@ -11,14 +11,15 @@ spec:
   source:
     helm:
       releaseName: airflow
+      parameters:
+      - name: createUserJob.useHelmHooks
+        value: "false"
+      - name: migrateDatabaseJob.useHelmHooks
+        value: "false"
       values: |
         workers:
           persistence:
             enabled: false
-        createUserJob:
-          useHelmHooks: false
-        migrateDatabaseJob:
-          useHelmHooks: false
     chart: airflow
     repoURL: https://airflow.apache.org
     targetRevision: 1.4.0
