@@ -12,9 +12,13 @@ spec:
     helm:
       releaseName: airflow
       values: |
-        workers.persistence.enabled: false
-        createUserJob.useHelmHooks: false
-        migrateDatabaseJob.useHelmHooks: false
+        workers:
+          persistence:
+            enabled: false
+        createUserJob:
+          useHelmHooks: false
+        migrateDatabaseJob:
+          useHelmHooks: false
     chart: airflow
     repoURL: https://airflow.apache.org
     targetRevision: 1.4.0
