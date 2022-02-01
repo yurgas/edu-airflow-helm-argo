@@ -20,7 +20,8 @@ spec:
       values: |
         workers:
           persistence:
-            enabled: false
+            enabled: true
+            size: 10Gi
         dags:
           gitSync:
             enabled: true
