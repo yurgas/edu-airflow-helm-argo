@@ -13,6 +13,8 @@ spec:
     repoURL: https://github.com/yurgas/edu-airflow-helm-argo.git
     targetRevision: main
   syncPolicy:
-    automated: {}
+    automated:
+      prune: true
+      selfHeal: true
     syncOptions:
     - CreateNamespace=true

@@ -8,3 +8,4 @@ helmCharts:
   releaseName: prometheus-operator
   namespace: prometheus-operator
   valuesFile: values.yaml
+  includeCRDs: true

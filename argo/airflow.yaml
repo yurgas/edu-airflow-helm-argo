@@ -35,6 +35,8 @@ spec:
     repoURL: https://airflow.apache.org
     targetRevision: 1.4.0
   syncPolicy:
-    automated: {}
+    automated:
+      prune: true
+      selfHeal: true
     syncOptions:
     - CreateNamespace=true
