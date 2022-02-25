@@ -11,7 +11,7 @@ spec:
   source:
     path: applications/grafana
     repoURL: https://github.com/yurgas/edu-airflow-helm-argo.git
-    targetRevision: master
+    targetRevision: main
   syncPolicy:
     automated: {}
     syncOptions:
