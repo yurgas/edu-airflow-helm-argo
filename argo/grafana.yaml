@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: grafana
+  namespace: argocd
+spec:
+  project: default
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: grafana
+  source:
+    path: applications/grafana
+    repoURL: https://github.com/yurgas/edu-airflow-helm-argo.git
+    targetRevision: master
+  syncPolicy:
+    automated: {}
+    syncOptions:
+    - CreateNamespace=true
