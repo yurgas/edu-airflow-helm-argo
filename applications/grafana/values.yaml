@@ -1,7 +1,12 @@
 admin:
   existingSecret: admin-secret
 
-grafana:
-  sidecar:
-    datasources:
-      url: http://prometheus-operator-kube-p-prometheus.prometheus-operator:9090
+datasources:
+ datasources.yaml:
+   apiVersion: 1
+   datasources:
+   - name: Prometheus
+     type: prometheus
+     url: http://prometheus-operator-kube-p-prometheus.prometheus-operator:9090
+     access: proxy
+     isDefault: true
