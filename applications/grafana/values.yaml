@@ -1,6 +1,10 @@
 admin:
   existingSecret: admin-secret
 
+persistence:
+  enabled: true
+  size: 1Gi
+
 datasources:
  datasources.yaml:
    apiVersion: 1
