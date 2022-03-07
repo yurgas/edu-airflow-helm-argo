@@ -10,3 +10,10 @@ datasources:
      url: http://prometheus-operator-kube-p-prometheus.prometheus-operator:9090
      access: proxy
      isDefault: true
+
+dashboards:
+  prometheus-stats:
+    # Ref: https://grafana.com/dashboards/2
+    gnetId: 2
+    revision: 2
+    datasource: Prometheus
