@@ -9,3 +9,6 @@ grafana:
 
 alertmanager: 
   enabled: false
+
+defaultRules:
+  create: false
