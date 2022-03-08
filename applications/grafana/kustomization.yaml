@@ -8,3 +8,8 @@ helmCharts:
   releaseName: grafana
   namespace: grafana
   valuesFile: values.yaml
+
+configMapGenerator:
+- name: grafana-dashboards
+  files:
+    - dashboards/dashboard-from-git.json
