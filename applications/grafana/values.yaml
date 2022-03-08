@@ -39,4 +39,5 @@ dashboards:
 sidecar:
   dashboards:
     enabled: true
-    defaultFolderName: git
+    provider: 
+      folder: git
