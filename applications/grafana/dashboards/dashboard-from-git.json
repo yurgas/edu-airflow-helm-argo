@@ -21,7 +21,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 2,
+  "id": 5,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -130,7 +130,8 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "Dashboard from git",
-  "version": 2,
+  "title": "dashboard-from-git",
+  "uid": "LLNdWsYnk",
+  "version": 1,
   "weekStart": ""
 }
