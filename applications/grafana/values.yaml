@@ -35,5 +35,7 @@ dashboards:
       gnetId: 2
       revision: 2
       datasource: Prometheus
-    dashboard-from-git:
-      file: dashboards/dashboard-from-git.json
+
+sidecar:
+  dashboards:
+    enabled: true
