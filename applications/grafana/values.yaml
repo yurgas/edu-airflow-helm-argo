@@ -39,3 +39,4 @@ dashboards:
 sidecar:
   dashboards:
     enabled: true
+    defaultFolderName: git
