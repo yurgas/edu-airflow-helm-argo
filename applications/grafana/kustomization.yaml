@@ -13,3 +13,7 @@ configMapGenerator:
 - name: grafana-dashboards
   files:
     - dashboards/dashboard-from-git.json
+  options:
+    labels:
+      grafana_dashboard: "true"
+      
